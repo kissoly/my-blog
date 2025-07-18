@@ -1,0 +1,266 @@
+# 博客配置文件
+# Blog Configuration File
+
+# 基本信息 / Basic Information
+site:
+  title: "我的技术博客"
+  subtitle: "记录学习，分享成长"
+  description: "专注于Java、Spring Boot、前端开发等技术分享的个人博客"
+  author: "kissoly"
+  email: "your-email@example.com"
+  url: "https://github.com/kissoly/my-blog"
+  language: "zh-CN"
+  timezone: "Asia/Shanghai"
+
+# 仓库信息 / Repository Information
+repository:
+  owner: "kissoly"
+  name: "my-blog"
+  branch: "main"
+  url: "https://github.com/kissoly/my-blog"
+
+# 目录结构 / Directory Structure
+directories:
+  posts: "posts"
+  assets: "assets"
+  images: "assets/images"
+  docs: "docs"
+  templates: "posts/templates"
+
+# 文章配置 / Post Configuration
+posts:
+  # 默认模板
+  default_template: "posts/templates/article-template.md"
+  
+  # 文件命名规则
+  naming_convention: "kebab-case"  # kebab-case, snake_case, camelCase
+  
+  # 日期格式
+  date_format: "YYYY-MM-DD"
+  
+  # 自动生成摘要长度
+  excerpt_length: 200
+  
+  # 阅读时间计算（每分钟字数）
+  reading_speed: 200
+
+# 标签系统 / Tag System
+tags:
+  # 技术标签
+  technology:
+    - java
+    - spring-boot
+    - mysql
+    - redis
+    - javascript
+    - vue
+    - react
+    - nodejs
+    - docker
+    - kubernetes
+    - linux
+    - git
+  
+  # 类型标签
+  type:
+    - tutorial
+    - solution
+    - summary
+    - experience
+    - beginner
+    - intermediate
+    - advanced
+    - best-practice
+    - troubleshooting
+    - performance
+  
+  # 主题标签
+  topic:
+    - backend
+    - frontend
+    - database
+    - devops
+    - architecture
+    - design-pattern
+    - algorithm
+    - tool
+    - productivity
+    - learning
+
+# 图片配置 / Image Configuration
+images:
+  # 支持的格式
+  formats:
+    - png
+    - jpg
+    - jpeg
+    - gif
+    - svg
+    - webp
+  
+  # 最大文件大小（MB）
+  max_size: 2
+  
+  # 压缩质量
+  quality: 85
+  
+  # CDN配置
+  cdn:
+    enabled: true
+    provider: "jsdelivr"  # jsdelivr, github, custom
+    base_url: "https://cdn.jsdelivr.net/gh/kissoly/my-blog@main"
+
+# 代码配置 / Code Configuration
+code:
+  # 支持的语言
+  languages:
+    - java
+    - javascript
+    - python
+    - sql
+    - bash
+    - yaml
+    - json
+    - xml
+    - html
+    - css
+    - markdown
+  
+  # 代码主题
+  theme: "github"  # github, monokai, solarized-light, solarized-dark
+  
+  # 显示行号
+  line_numbers: true
+  
+  # 代码折叠
+  code_folding: false
+
+# SEO配置 / SEO Configuration
+seo:
+  # 关键词
+  keywords:
+    - "Java开发"
+    - "Spring Boot"
+    - "技术博客"
+    - "编程教程"
+    - "开发经验"
+  
+  # 社交媒体
+  social:
+    github: "https://github.com/kissoly"
+    twitter: ""
+    linkedin: ""
+    email: "your-email@example.com"
+
+# 分析配置 / Analytics Configuration
+analytics:
+  # Google Analytics
+  google_analytics: ""
+  
+  # 百度统计
+  baidu_analytics: ""
+  
+  # 其他统计工具
+  custom_analytics: ""
+
+# 评论系统 / Comment System
+comments:
+  # 评论提供商
+  provider: "giscus"  # giscus, gitalk, disqus, none
+  
+  # Giscus配置
+  giscus:
+    repo: "kissoly/my-blog"
+    repo_id: ""
+    category: "General"
+    category_id: ""
+    mapping: "pathname"
+    theme: "light"
+
+# 部署配置 / Deployment Configuration
+deployment:
+  # GitHub Pages
+  github_pages:
+    enabled: false
+    branch: "gh-pages"
+    cname: ""
+  
+  # 自定义部署
+  custom:
+    enabled: false
+    script: "deploy.sh"
+
+# 开发配置 / Development Configuration
+development:
+  # 本地预览端口
+  port: 4000
+  
+  # 自动重载
+  live_reload: true
+  
+  # 草稿模式
+  drafts: true
+  
+  # 调试模式
+  debug: false
+
+# 备份配置 / Backup Configuration
+backup:
+  # 自动备份
+  auto_backup: true
+  
+  # 备份频率（天）
+  frequency: 7
+  
+  # 备份位置
+  location: "backup/"
+  
+  # 保留备份数量
+  keep_backups: 10
+
+# 通知配置 / Notification Configuration
+notifications:
+  # 新文章通知
+  new_post: true
+  
+  # 评论通知
+  comments: true
+  
+  # 错误通知
+  errors: true
+  
+  # 通知方式
+  methods:
+    - email
+    - github_issues
+
+# 扩展功能 / Extended Features
+features:
+  # 搜索功能
+  search:
+    enabled: false
+    provider: "algolia"  # algolia, lunr, custom
+  
+  # RSS订阅
+  rss:
+    enabled: false
+    title: "我的技术博客 RSS"
+    description: "最新技术文章订阅"
+  
+  # 站点地图
+  sitemap:
+    enabled: false
+    priority: 0.8
+    changefreq: "weekly"
+  
+  # 文章推荐
+  recommendations:
+    enabled: false
+    count: 3
+    algorithm: "tags"  # tags, content, random
+
+# 版本信息 / Version Information
+version:
+  config_version: "1.0.0"
+  last_updated: "2025-01-18"
+  author: "kissoly"
